@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000000;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #910c0c;
+  text-shadow: 0px 0px 15px #269615;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.s1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  
+}
+
+
+.s1 div {
+  background: linear-gradient(170deg, #243B55, #141E30);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.25s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 20px #ffde59;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1 div:hover {
+  transform: scale(1.07);
+  border-color: #ff0000;
+  box-shadow: 0px 0px 20px #ffde59;
+}
+
+
+.s1 img {
+    width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  border-radius: 10px;
+}
+.s1 div:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 25px #8f1004 inset;
+}
+body{
+    background: linear-gradient(180deg, #414345, #232526);
+}
