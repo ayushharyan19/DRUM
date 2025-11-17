@@ -65,7 +65,7 @@ main {
   display: block;
   height: auto;
   user-select: none;
-  pointer-events: none;
+  
   border-radius: 10px;
 }
 .s1 div:active {
@@ -74,4 +74,27 @@ main {
 }
 body{
     background: linear-gradient(180deg, #414345, #232526);
+}
+.key-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ffde59;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.s1 div {
+  position: relative;
+}
+
+
+.s1 div.active-effect .key-label {
+  background: #ff0000;
+  color: white;
+  box-shadow: 0 0 12px #ff0000;
 }
